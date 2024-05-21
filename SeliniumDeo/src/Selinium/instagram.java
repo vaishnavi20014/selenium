@@ -24,8 +24,6 @@ public class instagram {
 	    username1.sendKeys("aditya11 ");
 	    
 	    driver.findElement(By.id("loginForm")).click();
-	    
-	  //*[@id="loginForm"]/div/div[3]
 
 	}
 
