@@ -21,7 +21,7 @@ public class instagram {
 	    
 	   
 	    WebElement username1 = driver.findElement(By.name("password"));
-	    username1.sendKeys("aditya11 ");
+	    username1.sendKeys("aditya11");
 	    
 	    driver.findElement(By.id("loginForm")).click();
 

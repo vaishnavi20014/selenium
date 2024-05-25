@@ -46,15 +46,26 @@ public class demoqa {
 		selectDay.click();
 		
 		//subjects
-		WebElement sub = driver.findElement(By.className("subjects-auto-complete__value-container subjects-auto-complete__value-container--is-multi css-1hwfws3"));
-		sub.sendKeys("Mca");
+		//WebElement sub = driver.findElement(By.className("subjects-auto-complete__value-container subjects-auto-complete__value-container--is-multi css-1hwfws3"));
+		//sub.sendKeys("Mca");
+		//Thread.sleep(1000);
+		
+		WebElement Sub = driver.findElement(By.xpath("//div[@id='subjectsContainer']"));
+		Sub.sendKeys("english");
 		Thread.sleep(1000);
 		
 		//dropdown
-		WebElement state=driver.findElement(By.className("css-19bqh2r"));
-	    Select selectstate = new Select(state);
+		//WebElement state=driver.findElement(By.className("css-19bqh2r"));
+	    //Select selectstate = new Select(state);
 		
+		WebElement Colour = driver.findElement(By.id("oldSelectMenu"));
+		Select selectColour=new Select(Colour);
 		
+		// selecting by visible text
+		selectColour.selectByVisibleText("Aqua");
+		Thread.sleep(100);
+		selectColour.selectByVisibleText("Black");
+		Thread.sleep(2000);
 		
 
 	}
