@@ -17,11 +17,11 @@ public class instagram {
 	    driver.manage().window().maximize();
 	    
 	    WebElement username = driver.findElement(By.name("username"));
-	    username.sendKeys("vaishu_4.1");
+	    username.sendKeys("");
 	    
 	   
 	    WebElement username1 = driver.findElement(By.name("password"));
-	    username1.sendKeys("aditya11");
+	    username1.sendKeys("");
 	    
 	    driver.findElement(By.id("loginForm")).click();
 
