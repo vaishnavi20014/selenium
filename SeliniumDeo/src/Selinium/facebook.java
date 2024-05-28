@@ -17,11 +17,11 @@ public class facebook {
     driver.manage().window().maximize();
     
     WebElement username = driver.findElement(By.id("email"));
-    username.sendKeys("9850757659");
+    username.sendKeys("");
     
     Thread.sleep(100);
     WebElement username1 = driver.findElement(By.id("pass"));
-    username1.sendKeys("462001");
+    username1.sendKeys("");
     
     driver.findElement(By.name("login")).click();
     
